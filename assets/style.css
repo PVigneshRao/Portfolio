@@ -284,3 +284,158 @@ footer {
 .section h2 {
     color: #ffcc00;
 }
+.education-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.edu-item {
+    background: #1f1f1f;
+    color: white;
+    border-left: 4px solid #ffcc00;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.1);
+}
+
+.edu-item h3 {
+    color: #ffcc00;
+    margin-bottom: 5px;
+}
+
+.edu-item p {
+    margin: 4px 0;
+}
+
+
+.timeline {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: #ffcc00;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    padding: 20px 30px;
+    position: relative;
+    width: 50%;
+  }
+  
+  .timeline-item.left {
+    left: 0;
+  }
+  
+  .timeline-item.right {
+    left: 50%;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ffcc00;
+    border: 4px solid #333;
+    border-radius: 50%;
+    top: 20px;
+    z-index: 1;
+  }
+  
+  .timeline-item.left::before {
+    right: -12px;
+  }
+  
+  .timeline-item.right::before {
+    left: -12px;
+  }
+  
+  .timeline-item .content {
+    background: #1f1f1f;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.2);
+  }
+  
+  .timeline-item .content h3 {
+    margin-top: 0;
+    color: #ffcc00;
+  }
+  
+  .institution {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .timeline::after {
+      left: 20px;
+    }
+  
+    .timeline-item {
+      width: 100%;
+      padding-left: 40px;
+      margin-bottom: 30px;
+    }
+  
+    .timeline-item.right {
+      left: 0;
+    }
+  
+    .timeline-item.left::before,
+    .timeline-item.right::before {
+      left: 8px;
+    }
+  }
+/* Timeline Scroll Animation */
+.timeline-item {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1.2s ease-out;
+  }
+  
+  .timeline-item.left {
+    transform: translateX(-100px);
+  }
+  
+  .timeline-item.right {
+    transform: translateX(100px);
+  }
+  
+  .timeline-item.show {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .btn-download {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #ffcc00;
+    color: #1f1f1f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-download:hover {
+    background-color: #e6b800;
+    color: #000;
+  }
+  
+

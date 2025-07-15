@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio - Vignesh</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/style.css" />
+
+  <!-- Boxicons -->
   <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
 <body>
@@ -21,8 +25,8 @@
     </ul>
   </nav>
 
-  <!-- Home Section -->
-  <div id="home" class="home">
+  <!-- Home -->
+  <div id="home" class="section home">
     <div class="home-content">
       <div class="home-text">
         <h1>Welcome, I'm <span>Vignesh</span></h1>
@@ -42,7 +46,7 @@
     </div>
   </div>
 
-  <!-- About Section -->
+  <!-- About -->
   <div id="about" class="section about">
     <h2 class="section-title">About Me</h2>
     <div class="about-content">
@@ -59,7 +63,7 @@
     </div>
   </div>
 
-  <!-- Education Section -->
+  <!-- Education -->
   <div id="education" class="section education">
     <h2 class="section-title">Education</h2>
     <div class="timeline">
@@ -94,7 +98,7 @@
     </div>
   </div>
 
-  <!-- Experience Section -->
+  <!-- Experience -->
   <div id="experience" class="section experience">
     <h2 class="section-title">Experience</h2>
     <div class="experience-list">
@@ -108,19 +112,20 @@
           <li>Gained real-time experience in problem-solving, debugging, and teamwork.</li>
         </ul>
       </div>
+
       <div class="experience-card">
         <h3>College Website Contributor</h3>
-        <p class="institution">Vivekananda Engineering College</p>
-        <p class="date">Ongoing</p>
+        <p class="institution">Vivekananda Polytechnic,Puttur</p>
+        <p class="date">Oct 2023 - Nov 2023</p>
         <ul>
-          <li>Contributed to college website development team using WordPress.</li>
-          <li>Assisted in updating pages and managing content layout.</li>
+          <li>Contributed to college website using WordPress CMS.</li>
+          <li>Worked on layout structure, content management, and updates.</li>
         </ul>
       </div>
     </div>
   </div>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <div id="contact" class="section contact">
     <h2 class="section-title">Contact Me</h2>
     <form id="contact-form">
@@ -137,27 +142,6 @@
   </footer>
 
   <!-- JavaScript -->
-  <script>
-    function scrollToSection(sectionId) {
-      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-    }
-
-    function revealTimelineItems() {
-      const items = document.querySelectorAll('.timeline-item');
-      const triggerBottom = window.innerHeight * 0.85;
-
-      items.forEach((item, index) => {
-        const top = item.getBoundingClientRect().top;
-        if (top < triggerBottom) {
-          setTimeout(() => {
-            item.classList.add('show');
-          }, index * 200);
-        }
-      });
-    }
-
-    window.addEventListener('scroll', revealTimelineItems);
-    window.addEventListener('load', revealTimelineItems);
-  </script>
+  <script src="assets/script.js"></script>
 </body>
 </html>
